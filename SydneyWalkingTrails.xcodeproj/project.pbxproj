@@ -16,6 +16,9 @@
 		0A0A18B2235292CA005EE57B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A0A18B0235292CA005EE57B /* LaunchScreen.storyboard */; };
 		0A0A18BD235292CA005EE57B /* SydneyWalkingTrailsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0A18BC235292CA005EE57B /* SydneyWalkingTrailsTests.swift */; };
 		0A0A18C8235292CA005EE57B /* SydneyWalkingTrailsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0A18C7235292CA005EE57B /* SydneyWalkingTrailsUITests.swift */; };
+		0A0A18D923529B83005EE57B /* trails.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A0A18D823529B83005EE57B /* trails.json */; };
+		0A0A18DE2352A136005EE57B /* Walk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0A18DD2352A136005EE57B /* Walk.swift */; };
+		0A0A18E22352A4BD005EE57B /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0A18E12352A4BD005EE57B /* DataLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		0A0A18C3235292CA005EE57B /* SydneyWalkingTrailsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SydneyWalkingTrailsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A0A18C7235292CA005EE57B /* SydneyWalkingTrailsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SydneyWalkingTrailsUITests.swift; sourceTree = "<group>"; };
 		0A0A18C9235292CA005EE57B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A0A18D823529B83005EE57B /* trails.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = trails.json; sourceTree = "<group>"; };
+		0A0A18DD2352A136005EE57B /* Walk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Walk.swift; sourceTree = "<group>"; };
+		0A0A18E12352A4BD005EE57B /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,12 +109,14 @@
 			children = (
 				0A0A18A2235292C6005EE57B /* AppDelegate.swift */,
 				0A0A18A4235292C6005EE57B /* SceneDelegate.swift */,
-				0A0A18A9235292C6005EE57B /* ContentView.swift */,
 				0A0A18AB235292CA005EE57B /* Assets.xcassets */,
 				0A0A18B0235292CA005EE57B /* LaunchScreen.storyboard */,
 				0A0A18B3235292CA005EE57B /* Info.plist */,
-				0A0A18A6235292C6005EE57B /* SydneyWalkingTrails.xcdatamodeld */,
+				0A0A18DF2352A480005EE57B /* Data */,
+				0A0A18DC23529BB8005EE57B /* Models */,
 				0A0A18AD235292CA005EE57B /* Preview Content */,
+				0A0A18D723529ADF005EE57B /* Resources */,
+				0A0A18DA23529B9F005EE57B /* Views */,
 			);
 			path = SydneyWalkingTrails;
 			sourceTree = "<group>";
@@ -137,6 +145,55 @@
 				0A0A18C9235292CA005EE57B /* Info.plist */,
 			);
 			path = SydneyWalkingTrailsUITests;
+			sourceTree = "<group>";
+		};
+		0A0A18D723529ADF005EE57B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0A0A18D823529B83005EE57B /* trails.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0A0A18DA23529B9F005EE57B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0A0A18A9235292C6005EE57B /* ContentView.swift */,
+				0A0A18DB23529BA6005EE57B /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0A0A18DB23529BA6005EE57B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		0A0A18DC23529BB8005EE57B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0A0A18DD2352A136005EE57B /* Walk.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0A0A18DF2352A480005EE57B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0A0A18E12352A4BD005EE57B /* DataLoader.swift */,
+				0A0A18E02352A491005EE57B /* Core Data */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		0A0A18E02352A491005EE57B /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				0A0A18A6235292C6005EE57B /* SydneyWalkingTrails.xcdatamodeld */,
+			);
+			path = "Core Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +302,7 @@
 			files = (
 				0A0A18B2235292CA005EE57B /* LaunchScreen.storyboard in Resources */,
 				0A0A18AF235292CA005EE57B /* Preview Assets.xcassets in Resources */,
+				0A0A18D923529B83005EE57B /* trails.json in Resources */,
 				0A0A18AC235292CA005EE57B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +330,8 @@
 			files = (
 				0A0A18A3235292C6005EE57B /* AppDelegate.swift in Sources */,
 				0A0A18A5235292C6005EE57B /* SceneDelegate.swift in Sources */,
+				0A0A18E22352A4BD005EE57B /* DataLoader.swift in Sources */,
+				0A0A18DE2352A136005EE57B /* Walk.swift in Sources */,
 				0A0A18AA235292C6005EE57B /* ContentView.swift in Sources */,
 				0A0A18A8235292C6005EE57B /* SydneyWalkingTrails.xcdatamodeld in Sources */,
 			);
