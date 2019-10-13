@@ -6,5 +6,21 @@
     {
         "id": 1,
         "name": "Bondi to Coogee"
+    },
+    {
+        "id": 2,
+        "name": "Rose Bay to Watson's Bay"
+    },
+    {
+        "id": 3,
+        "name": "Manly Dam Circuit"
+    },
+    {
+        "id": 4,
+        "name": "Taronga Zoo to Balmoral Beach"
+    },
+    {
+        "id": 5,
+        "name": "North Head Circuit"
     }
 ]
