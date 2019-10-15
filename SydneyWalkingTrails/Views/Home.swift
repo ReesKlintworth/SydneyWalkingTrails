@@ -1,14 +1,14 @@
 //
-//  ContentView.swift
+//  Home.swift
 //  SydneyWalkingTrails
 //
-//  Created by Rees Klintworth on 10/13/19.
+//  Created by Rees Klintworth on 10/15/19.
 //  Copyright © 2019 Rees Klintworth. All rights reserved.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct Home: View {
     var body: some View {
         List(walkData) { walk in
             Text(walk.name)
@@ -16,8 +16,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct Home_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Home()
     }
 }
