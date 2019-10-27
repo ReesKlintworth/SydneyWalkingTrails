@@ -1,26 +1,32 @@
 [
     {
         "id": 0,
-        "name": "Spit to Manly"
+        "name": "Spit to Manly",
+        "completed": false
     },
     {
         "id": 1,
-        "name": "Bondi to Coogee"
+        "name": "Bondi to Coogee",
+        "completed": false
     },
     {
         "id": 2,
-        "name": "Rose Bay to Watson's Bay"
+        "name": "Rose Bay to Watson's Bay",
+        "completed": false
     },
     {
         "id": 3,
-        "name": "Manly Dam Circuit"
+        "name": "Manly Dam Circuit",
+        "completed": false
     },
     {
         "id": 4,
-        "name": "Taronga Zoo to Balmoral Beach"
+        "name": "Taronga Zoo to Balmoral Beach",
+        "completed": false
     },
     {
         "id": 5,
-        "name": "North Head Circuit"
+        "name": "North Head Circuit",
+        "completed": false
     }
 ]
