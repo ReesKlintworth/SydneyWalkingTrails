@@ -9,4 +9,5 @@
 struct Walk: Codable, Identifiable {
     var id: Int
     var name: String
+    var completed: Bool
 }

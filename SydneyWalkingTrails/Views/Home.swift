@@ -10,8 +10,11 @@ import SwiftUI
 
 struct Home: View {
     var body: some View {
-        List(walkData) { walk in
-            Text(walk.name)
+        NavigationView {
+            List(walkData) { walk in
+                WalkRow(walk: walk)
+            }
+            .navigationBarTitle("Sydney Walks")
         }
     }
 }
